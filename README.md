@@ -224,5 +224,146 @@ https://github.com/ethansevilla/OS-Ticket-Pre-Reqs/assets/170621372/48374172-ef6
 <p>
 	<img src="https://github.com/ethansevilla/OS-Ticket-Pre-Reqs/assets/170621372/3ad0691a-87f8-4ab0-9211-1e657811c603"/>
 
+</p> 
+
+<br />
+<br />
+<h3>Refresh the osTicket site in your browser, observe the changes</h3>
+<br />
+<p>
+	<img src="https://github.com/ethansevilla/OS-Ticket-Pre-Reqs/assets/170621372/394c0284-2288-4121-aa2a-d08af996d035"/>
 </p>
+<br />
+<br />
+<h3>Rename</h3>
+<br />
+<p>
+	From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php to C:\inetpub\wwwroot\osTicket\include\ost-config.php
+
+</p> 
+<p>
+
+https://github.com/ethansevilla/OS-Ticket-Pre-Reqs/assets/170621372/fd7c722d-bb8a-489c-9da6-4ee1c2ac4798
+
+
+</p> 
+<br />
+<br />
+<h3>Assign Permissions: ost-config.php</h3>
+<br />
+<p>
+	Disable inheritance -> Remove All:
+</p> 
+
+<p>
+	<img src="https://github.com/ethansevilla/OS-Ticket-Pre-Reqs/assets/170621372/7dd5bd6a-13c2-4ecd-bf9c-8a8587a92bae"/>
+
+</p> 
+<p>
+	New Permissions -> Everyone -> All:
+</p>
+<p>
+	
+
+https://github.com/ethansevilla/OS-Ticket-Pre-Reqs/assets/170621372/4d4eb92d-e9e9-42dc-9b26-c9f0643b14c0
+
+</p> 
+<br />
+<br />
+<h3>Continue Setting up osTicket in the browser</h3>
+<br />
+<p>
+	Name Helpdesk
+</p>
+<p>
+	Default email 
+</p>
+<p>
+	<img src="https://github.com/ethansevilla/OS-Ticket-Pre-Reqs/assets/170621372/b60c93c5-4a9f-4a79-af7e-3446333cc4b4"/>
+</p> 
+<br />
+<br />
+</h3>Download and Install HeidiSQL</h3>
+<br />
+<p> 
+     <img src="https://github.com/ethansevilla/OS-Ticket-Pre-Reqs/assets/170621372/ca5e20e6-0c04-4522-af2e-375e118174ae"/>
+</p> 
+<p>
+	Create a new session, root/Password1.
+<p> 
+        Connect to the session:
+</p> 
+    <img src="https://github.com/ethansevilla/OS-Ticket-Pre-Reqs/assets/170621372/9fe8b85e-53c7-4c1f-af85-02ff4b93d7fe"/>
+</p>
+<p>
+	Create a database called “osTicket”:
+</p>
+<p>
+	<img src="https://github.com/ethansevilla/OS-Ticket-Pre-Reqs/assets/170621372/9e9143cf-e4c5-4fc2-82e8-20017fa30c2e"/> 
+
+</p>
+<br />
+<br />
+<h3>Continue Setting up osTicket in the browser</h3>
+<br />
+<p>MySQL Database: osTicket</p>
+<p>
+	MySQL Username:
+</p>
+<p>
+	MySQL Password:
+</p> 
+<p> 
+	Click “Install Now!”
+
+</p>
+<p> 
+	Congratulations, hopefully, it is installed with no errors! 
+
+</p>  
+
+<p>
+	<img src="https://github.com/ethansevilla/OS-Ticket-Pre-Reqs/assets/170621372/47a0789c-b71e-4427-b3ad-46403b901d5c"/> 
+</p>
+<br />
+<br />
+<h3>Clean up</h3>
+<br /> 
+<p>
+	Delete: C:\inetpub\wwwroot\osTicket\setup:
+</p>
+
+<p>
+	<img src="https://github.com/ethansevilla/OS-Ticket-Pre-Reqs/assets/170621372/24ead4c5-bcaf-4b45-b3f2-0aa35d2c0ae1"/>  
+
+</p> 
+
+<p>
+	Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php:
+</p> 
+<p>
+	
+
+https://github.com/ethansevilla/OS-Ticket-Pre-Reqs/assets/170621372/19d4ae86-a445-4e38-bb88-e8d853e23368
+
+
+</p> 
+
+<br />
+<br />
+<h3>Login to the osTicket Admin Panel (http://localhost/osTicket/scp/login.php)</h3>
+<br />
+<p> 
+      
+
+https://github.com/ethansevilla/OS-Ticket-Pre-Reqs/assets/170621372/d8fb8409-48f8-4f7a-a02a-51a3e89592da 
+</p> 
+
+<br />
+<br />
+<p>
+	Setting up and installing osTicket is done! I hope this tutorial helped you with installing osTicket.
+</p>
+
+
 
