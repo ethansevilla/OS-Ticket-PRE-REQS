@@ -152,101 +152,63 @@ Password: Password1:
 
 	
 </p>
+<br />
+<br />
+<h3>Install osTicket v1.15.8</h3>
+<br />
 
 <p>
-   - Install osTicket v1.15.8
+	-Download osTicket 
+</p>
+<p>
+       -Extract and copy the “upload” folder to c:\inetpub\wwwroot
 
 </p> 
 <p>
-	<img src="https://i.imgur.com/Fw4m4fZ.png" height="75%" width="100%" alt="Enable IIS in Windows"/>
+	<img src="https://github.com/ethansevilla/OS-Ticket-Pre-Reqs/assets/170621372/28222cd0-273f-4ed9-a0f2-6514e9d0b44e"/>
+
 </p>
 <p>
-  Open after installation:
+     - Within c:\inetpub\wwwroot, Rename “upload” to “osTicket”
 </p>
 <p>
-	<img src="https://i.imgur.com/X0GcGff.png" height="75%" width="100%" alt="MySQL 5.5"/>
+	<img src="https://github.com/ethansevilla/OS-Ticket-Pre-Reqs/assets/170621372/f21e9869-8cc7-41d2-8ae9-f89e10900c34"/>
 </p>
-<br />
-<p>
-  Add MySQL 5.5 (it will ask for credentials to be created later).
-</p>
-<p>
-  Name: root
-</p>
-<o>
-  Password: Password1:
-</p>
-<p>
-	<img src="https://i.imgur.com/zdhWXNx.png" height="75%" width="100%" alt="Credentials"/>
-</p>
-<p>
-  Add All simple versions of x86 PHP up until 7.3:
-</p>
-<p>
-	<img src="https://i.imgur.com/0npbiTj.png" height="75%" width="100%" alt="PHP"/>
-</p>
-<p>
-  Fix any failures if required. 
-</p>
-<p>
-  Install PHP Version 7.3.8 (or any other version if necessary, archives).
-</p>
-<p>
-  Install Microsoft Visual C++ 2009 Redistributable Package (if necessary).
-</p>
-<p>
-  Install PHP Manager 1.5.0 for IIS 10:
-</p>
-<p>
-	<img src="https://i.imgur.com/LcD8jGJ.png" height="75%" width="100%" alt="PHP Manager"/>
-</p>
+
 <br />
 <br />
-<h3 align="center">Install osTicket v1.15.8</h3>
+<h3>Reload IIS (Open IIS, Stop and Start the server)</h3>
 <br />
 <p>
-  Download osTicket (download from within lab files: link).
+ Go to sites -> Default -> osTicket:
 </p>
 <p>
-	Extract and copy the “upload” folder INTO c:\inetpub\wwwroot:
-</p>
-	<img src="https://i.imgur.com/0MUJLMU.png" height="75%" width="100%" alt="PHP Manager"/>
-	<img src="https://i.imgur.com/1h9goM8.png" height="75%" width="100%" alt="PHP Manager"/>
-<p>
-	Within c:\inetpub\wwwroot, Rename “upload” to “osTicket”:
-</p>
-<p>
-	<img src="https://i.imgur.com/pDikkgq.png" height="75%" width="100%" alt="rename to osTicket"/>
-</p>
-<br />
-<br />
-<h3 align="center">Reload IIS (Open IIS, Stop and Start the server)</h3>
-<br />
-<p>
-	Go to sites -> Default -> osTicket:
-</p>
-<p>
-	<img src="https://i.imgur.com/QeWNlG3.png" height="75%" width="100%" alt="default osTicket"/>
+	<img src="https://github.com/ethansevilla/OS-Ticket-Pre-Reqs/assets/170621372/1f0fad17-d033-4455-b669-9f30c4dc9bb3"/>
+
+	
 </p>
 <p>
 	On the right, click “Browse *:80”:
-</p>
+</p> 
+
 <p>
-	<img src="https://i.imgur.com/3iXhNbi.png" height="75%" width="100%" alt="port 80"/>
+	
+
+https://github.com/ethansevilla/OS-Ticket-Pre-Reqs/assets/170621372/48374172-ef6d-4409-bc35-bffa97e430a8
+
 </p>
 <br />
-<br />
-<h3 align="center">Enable Extensions in IIS: Note that some extensions are not enabled</h3>
+<br /> 
+<h3>Enable Extensions in IIS: Note that some extensions are not enabled</h3>
 <br />
 <p>
 	Go back to IIS, sites -> Default -> osTicket.
 </p>
+
 <p>
 	Double-click PHP Manager:
 </p>
-<p>
-	<img src="https://i.imgur.com/LFKo5Hs.png" height="75%" width="100%" alt="PHP Manager"/>
-</p>
+
 <p>
 	Click “Enable or disable an extension”.
 </p>
@@ -260,133 +222,7 @@ Password: Password1:
 	Enable: php_opcache.dll:
 </p>
 <p>
-	<img src="https://imgur.com/a/nrQo0kz" height="75%" width="100%" alt="Disk Sanitization Steps"/>
-</p>
-<br />
-<br />
-<h3 align="center">Refresh the osTicket site in your browser, observe the changes</h3>
-<br />
-<p>
-	<img src="https://i.imgur.com/6iSNd4H.png" height="75%" width="100%" alt="osTicket change"/>
-</p>
-<br />
-<br />
-<h3 align="center">Rename</h3>
-<br />
-<p>
-	From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php.
-</p>
-<p>
-	To: C:\inetpub\wwwroot\osTicket\include\ost-config.php:
-</p>
-<p>
-	<img src="https://i.imgur.com/TEw71SD.png" height="75%" width="100%" alt="ost-config"/>
-</p>
-<br />
-<br />
-<h3 align="center">Assign Permissions: ost-config.php</h3>
-<br />
-<p>
-	Disable inheritance -> Remove All:
-</p>
-<p>
-	<img src="https://i.imgur.com/1QtRWEF.png" height="75%" width="100%" alt="disable inheritance"/>
-</p>
-<p>
-	New Permissions -> Everyone -> All:
-</p>
-<p>
-	<img src="https://i.imgur.com/YzsMXNX.png" height="75%" width="100%" alt="new permissions"/>
-</p>
-<p>
-	<img src="https://i.imgur.com/k7x9yGR.png" height="75%" width="100%" alt="new permissions - all"/>
-</p>
-<br />
-<br />
-<h3 align="center">Continue Setting up osTicket in the browser (click Continue)</h3>
-<br />
-<p>
-	Name Helpdesk.
-</p>
-<p>
-	Default email (receives email from customers):
-</p>
-<p>
-	<img src="https://i.imgur.com/rvMvlNC.png" height="75%" width="100%" alt="continue osTicket setup"/>
-	<img src="https://i.imgur.com/YszhIpl.png" height="75%" width="100%" alt="osTicket settings"/>
-</p>
-<br />
-<br />
-<h3 align="center">Download and Install HeidiSQL</h3>
-<br />
-<p>
-	<img src="https://i.imgur.com/AEg0b2P.png" height="75%" width="100%" alt="download HeidiSQL"/>
-</p>
-<p>
-	Create a new session, root/Password1.
-</p>
-<p>
-	Connect to the session:
-</p>
-<p>
-	<img src="https://i.imgur.com/9t51ApR.png" height="75%" width="100%" alt="create sessions"/>
-</p>
-<p>
-	Create a database called “osTicket”:
-</p>
-<p>
-	<img src="https://i.imgur.com/vXzmQqg.png" height="75%" width="100%" alt="create database"/>
-</p>
-<br />
-<br />
-<h3 align="center">Continue Setting up osTicket in the browser</h3>
-<br />
-<p>MySQL Database: osTicket</p>
-<p>
-	MySQL Username: root
-</p>
-<p>
-	MySQL Password: Password1:
-</p>
-<p>
-	<img src="https://i.imgur.com/akDyber.png" height="75%" width="100%" alt="setting up osTicket cont'd"/>
-</p>
-<p>Click “Install Now!”</p>
-<p>Congratulations, hopefully it is installed with no errors!</hp>
-<p>
-	<img src="https://i.imgur.com/J5omRoE.png" height="75%" width="100%" alt="installation complete"/>
-</p>
-<br />
-<br />
-<h3 align="center">Clean up</h3>
-<br />
-<p>
-	Delete: C:\inetpub\wwwroot\osTicket\setup:
-</p>
-<p>
-	<img src="https://i.imgur.com/eg0ZPG3.png" height="75%" width="100%" alt="clean up"/>
-</p>
-<p>
-	Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php:
-</p>
-<p>
-	<img src="https://i.imgur.com/n6k46XL.png" height="75%" width="100%" alt="permissions"/>
-</p>
-<br />
-<br />
-<h3 align="center">Login to the osTicket Admin Panel (http://localhost/osTicket/scp/login.php)</h3>
-<br />
-<p>
-	<img src="https://i.imgur.com/zklvv8K.png" height="75%" width="100%" alt="admin panel"/>
-</p>
-<br />
-<br />
-<p>
-	And there you have it! I hope this tutorial helped you with installing osTicket.
-</p>
-<p>
-	And now you can practice having your own mock help desk locally to prepare you for a postion in a help desk or IT support position.
-</p>
+	<img src="https://github.com/ethansevilla/OS-Ticket-Pre-Reqs/assets/170621372/3ad0691a-87f8-4ab0-9211-1e657811c603"/>
 
-
+</p>
 
