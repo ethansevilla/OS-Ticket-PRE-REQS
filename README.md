@@ -142,6 +142,14 @@ Name: root
 
 Password: Password1:
 </p>
+
+<p>
+      - Register PHP from within IIS (PHP Manager -> C:\PHP\php-cgi.exe)
+
+</p>
+<p>
+	<img src="https://github.com/user-attachments/assets/610e341c-3cd0-4490-b46a-eae4033607ac"/>
+</p>
 <p>
     - Open IIS as an Admin, Reload IIS (Open IIS, Stop and Start the server)
 
